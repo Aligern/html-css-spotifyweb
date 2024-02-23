@@ -77,8 +77,11 @@ h2 {
     justify-content: end;
     padding: 20px 5px 30px 5px;
 }
+.card-container {
+    gap: 20px;
+}
 .card {
-    width: calc(100% / 6);
+    width: calc(100% / 6 );
 }
 .card-img {
     position: relative;
@@ -94,7 +97,7 @@ h2 {
 .card-img:hover .img-hover{
     display: block;
 }
-.card-img:hover {
+.img-hover:hover {
     opacity: 0.5;
 }
 /* text */
