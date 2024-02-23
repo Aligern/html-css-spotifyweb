@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+}
 ul {
     list-style: none;
 }
@@ -11,24 +14,36 @@ ul {
     border: 1px solid red;
 }
 
+/* colors */
+:root {
+	--color-primary: #141922;
+	--color-sidebar: #000000;
+	--color-toolbar: #282828;
+	--color-secondary: #7D7F84;
+	--color-green: #adff2f;
+	--color-white: #ffffff;
+}
+
 /* general */
 html {
     scroll-behavior: smooth;
 }
 body {
-    /* font-family: monserrat ;
-    background-color: ;
-    color: ; */
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-white);
+}
+img {
+    width: 100%;
+    display: block;
 }
 .wrapper {
     height: 100vh;
     /* overflow: hidden; */
-    background-color: blue;
 }
 #toolbar {
     /* bg color  */
     height: 90px;
-    background-color: chartreuse;
+    background-color: var(--color-toolbar);
 }
 .content {
     height: calc(100vh - 90px);
@@ -39,40 +54,83 @@ body {
 #sidebar {
     width: 200px;
     height: 100%;
-    background-color: chocolate;
+    background-color: var(--color-sidebar);
 }
 main {
     width: calc(100% - 200px);
-    background-color: coral;
-    padding-top: 100px;
+    background-color: var(--color-primary);
+    padding: 100px 20px 20px 20px;
     overflow-y: auto;
 }
+h2 {
+    margin-bottom: 25px;
+}
 .header {
-    background-color: rgba(0, 255, 255, 0.438);
+    position: fixed;
+    background-color: #00000062;
     height: 80px;
     position: fixed;
     top: 0;
     left: 200px;
     width: calc(100% - 200px);
+    align-items: center;
+    justify-content: end;
+    padding: 20px 5px 30px 5px;
+}
+.card {
+    width: calc(100% / 6);
+}
+/* text */
+.header a {
+    color: var(--color-white);
+}
+nav {
+    margin-bottom: 30px;
+}
+nav a {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+}
+nav ul a {
+    margin: 13px;
+}
+.card-title>* {
+    text-align: center;
+    padding: 5px;
+}
+/* utility */
+.btn-header {
+    padding: 10px 20px;
+    border: 2px solid var(--color-white);
+    border-radius: 25px;
+    text-transform: uppercase;
 }
 
 /* flex utility */
 .d-flex {
     display: flex;
 }
+.justify {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+    align-content: center;
+}
 
 /* media query */
 
 
 
-
 /* ///////////////////////////////////////// */
 /* desktop 1200 */
+
 /* mostrare logo grande */
 
-/* md 992 */
+/* large 992 */
 
-/* tablet 768 */
-
-/* mobile 576 */
+/* medium 768 */
 /* mostrare logo piccolo  */
+
+/* small 576 */

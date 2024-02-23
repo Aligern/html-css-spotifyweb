@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style/style.css">
     <title>Spotify</title>
 </head>
@@ -13,23 +17,81 @@
     <!-- wrapper 100vh - i pixel della toolbar -->
     <div class="wrapper">
 
-        <div class="content d-flex">
-            <div class="header">
+        <div class="content d-flex debug">
+            <div class="header d-flex debug">
+                <!-- header fixed -->
+                <a class="btn-header" href="">Effettua L'upgrade</a>
                 <!-- bottone con text transform -->
             </div>
-            <div id="sidebar">
+            <div id="sidebar" class="debug">
                 <!-- flex column space between -->
             </div>
+            <!-- music menu -->
             <main>
+                <!-- nav ul flex -->
+                <nav class="debug">
+                    <ul class="d-flex justify">
+                        <li>
+                            <a href="">
+                                In evidenza
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Podcast
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Classifiche
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Generi e mood
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Nuova Uscite
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Scopri
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <section id="Recently" class="debug">
+                        <h2 >Recently played</h2>
+                    <div class="card-container d-flex debug">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./img/metal_lifting.jpg" alt="#">
+                                <div class="img-hover">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h4>Heavy Metal</h4>
+                                <dd>subtitle</dd>
+                            </div>
+                        </div>
 
+                    </div>
+                </section>
+                <section>sezione 2</section>
+                <section>sezione 3</section>
             </main>
 
         </div>
 
-        <div id="toolbar">
+        <div id="toolbar" class="debug">
             <!-- tre container flex -->
         </div>
 
     </div>
+
 </body>
 </html>
