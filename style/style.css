@@ -80,6 +80,23 @@ h2 {
 .card {
     width: calc(100% / 6);
 }
+.card-img {
+    position: relative;
+}
+.img-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    display: none;
+}
+.card-img:hover .img-hover{
+    display: block;
+}
+.card-img:hover {
+    opacity: 0.5;
+}
 /* text */
 .header a {
     color: var(--color-white);
@@ -92,8 +109,15 @@ nav a {
     text-transform: uppercase;
     color: var(--color-secondary);
 }
+nav a:hover {
+    color: var(--color-white);
+}
 nav ul a {
     margin: 13px;
+}
+dd {
+    font-weight: 600;
+    color: var(--color-secondary);
 }
 .card-title>* {
     text-align: center;
