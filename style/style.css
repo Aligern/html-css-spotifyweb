@@ -1,0 +1,78 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+.debug {
+    border: 1px solid red;
+}
+
+/* general */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    /* font-family: monserrat ;
+    background-color: ;
+    color: ; */
+}
+.wrapper {
+    height: 100vh;
+    /* overflow: hidden; */
+    background-color: blue;
+}
+#toolbar {
+    /* bg color  */
+    height: 90px;
+    background-color: chartreuse;
+}
+.content {
+    height: calc(100vh - 90px);
+    width: 100%;
+    background-color: blueviolet;
+    /* background-color: ; */
+}
+#sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: chocolate;
+}
+main {
+    width: calc(100% - 200px);
+    background-color: coral;
+    padding-top: 100px;
+    overflow-y: auto;
+}
+.header {
+    background-color: rgba(0, 255, 255, 0.438);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+}
+
+/* flex utility */
+.d-flex {
+    display: flex;
+}
+
+/* media query */
+
+
+
+
+/* ///////////////////////////////////////// */
+/* desktop 1200 */
+/* mostrare logo grande */
+
+/* md 992 */
+
+/* tablet 768 */
+
+/* mobile 576 */
+/* mostrare logo piccolo  */
