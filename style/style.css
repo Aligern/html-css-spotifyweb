@@ -65,7 +65,18 @@ main {
 h2 {
     margin-bottom: 25px;
 }
+section {
+    margin-bottom: 50px;
+}
+
+#john-doe h2 {
+    margin-bottom: 10px;
+}
+#john-doe dd, #artist-section dd {
+    margin-bottom: 25px;
+}
 .header {
+    z-index: 3001;
     position: fixed;
     background-color: #00000062;
     height: 80px;
@@ -100,6 +111,11 @@ h2 {
 .img-hover:hover {
     opacity: 0.5;
 }
+#artist-section img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
 /* text */
 .header a {
     color: var(--color-white);
@@ -128,6 +144,7 @@ dd {
 }
 /* utility */
 .btn-header {
+    margin-right: 20px;
     padding: 10px 20px;
     border: 2px solid var(--color-white);
     border-radius: 25px;
