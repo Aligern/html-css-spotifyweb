@@ -38,10 +38,8 @@ img {
 }
 .wrapper {
     height: 100vh;
-    /* overflow: hidden; */
 }
 #toolbar {
-    /* bg color  */
     height: 90px;
     background-color: var(--color-toolbar);
 }
@@ -49,7 +47,6 @@ img {
     height: calc(100vh - 90px);
     width: 100%;
     background-color: blueviolet;
-    /* background-color: ; */
 }
 #sidebar {
     width: 200px;
@@ -61,22 +58,6 @@ main {
     background-color: var(--color-primary);
     padding: 100px 20px 20px 20px;
     overflow-y: auto;
-}
-h2 {
-    margin-bottom: 25px;
-}
-h4 {
-    margin-top: 15px;
-}
-section {
-    margin-bottom: 50px;
-}
-
-#john-doe h2 {
-    margin-bottom: 10px;
-}
-#john-doe dd, #artist-section dd {
-    margin-bottom: 25px;
 }
 .header {
     z-index: 3001;
@@ -91,6 +72,23 @@ section {
     justify-content: end;
     padding: 20px 5px 30px 5px;
 }
+section {
+    margin-bottom: 50px;
+}
+h2 {
+    margin-bottom: 25px;
+}
+h4 {
+    margin-top: 15px;
+}
+
+/* sections */
+#john-doe h2 {
+    margin-bottom: 10px;
+}
+#john-doe dd, #artist-section dd {
+    margin-bottom: 25px;
+}
 .card-container {
     gap: 20px;
 }
@@ -99,14 +97,6 @@ section {
 }
 .card-img {
     position: relative;
-}
-.icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5em;
-    display: none;
 }
 .card-img:hover .icon{
     display: block;
@@ -119,6 +109,7 @@ section {
     aspect-ratio: 1/1;
     border-radius: 50%;
 }
+
 /* text utilities*/
 .header a {
     color: var(--color-white);
@@ -127,7 +118,7 @@ nav {
     margin-bottom: 30px;
 }
 nav a {
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     color: var(--color-secondary);
 }
@@ -135,7 +126,7 @@ nav a:hover {
     color: var(--color-white);
 }
 nav ul a {
-    margin: 13px;
+    padding: 15px;
 }
 dd {
     font-weight: 600;
@@ -145,6 +136,7 @@ dd {
     text-align: center;
     padding: 5px;
 }
+
 /* utility */
 .btn-header {
     margin-right: 20px;
@@ -152,6 +144,51 @@ dd {
     border: 2px solid var(--color-white);
     border-radius: 25px;
     text-transform: uppercase;
+}
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    display: none;
+}
+
+/* sidebar */
+#s-logo {
+    width: 75%;
+    padding: 10px;
+}
+#main-list ul li {
+    padding: 5px;
+    border-left: 3px solid rgba(255, 255, 255, 0.0);
+}
+#main-list ul li:hover {
+    border-left: 3px solid var(--color-green);
+}
+#sidebar ul li a:hover{
+    color: var(--color-white);
+}
+#sidebar ul img {
+    width: 35px;
+}
+#sidebar ul li {
+    display: flex;
+    align-items: center;
+}
+#sidebar ul li a {
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+#playlist {
+    padding: 9px;
+}
+#playlist h4 {
+    text-transform: uppercase;
+}
+#playlist ul li i {
+    font-size: 3em;
+    padding-right: 5px;
 }
 
 /* flex utility */
@@ -167,8 +204,33 @@ dd {
 }
 
 /* media query */
+@media screen and (max-width: 992px) {
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        padding: 10px;
+    }
+    .card-container {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: calc(100% / 4 - 17px);
+    }
+}
 
+@media screen and (max-width:768px) {
+    .card {
+        width: calc(100% / 2 - 17px);
+    }
+}
 
+@media screen and (max-width: 576px) {
+    .card {
+        width: calc(100% - 17px);
+    }
+}
 
 /* ///////////////////////////////////////// */
 /* desktop 1200 */
