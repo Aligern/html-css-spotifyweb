@@ -65,7 +65,6 @@ main {
     position: fixed;
     background-color: #00000062;
     height: 80px;
-    position: fixed;
     top: 0;
     left: 200px;
     width: calc(100% - 200px);
@@ -180,9 +179,9 @@ dd {
     padding: 15px;
 }
 #small-s-logo {
-    width: 33%;
+    width: 40px;
     display: none;
-    padding: 15px;
+    margin: 5px;
 }
 #main-list ul li {
     padding: 5px;
@@ -190,9 +189,6 @@ dd {
 }
 #main-list ul li:hover {
     border-left: 3px solid var(--color-green);
-}
-#main-list ul li a:first-child{
-    padding-left: 10px;
 }
 #playlist {
     padding: 10px;
@@ -281,8 +277,15 @@ dd {
 }
 
 @media screen and (max-width: 576px) {
-    .card {
-        width: calc(100% - 17px);
+    .header {
+        left: 50px;
+        width: 92%;
+    }
+    main {
+        flex-grow: 1;
+    }
+    #sidebar {
+        width: 50px;
     }
     #sidebar #s-logo {
         display: none;
@@ -290,7 +293,21 @@ dd {
     #sidebar #small-s-logo {
         display: block;
     }
-    
+    #main-list ul li a:last-child  {
+        display: none;
+    }
+    #playlist {
+        display: none;
+    }
+    #app {
+        border: none;
+    }
+    #app a {
+        display: none;
+    }
+    #app-bottom h4 {
+        display: none;
+    }
 }
 
 /* ///////////////////////////////////////// */
