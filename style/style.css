@@ -242,6 +242,55 @@ dd {
     width: 20px;
 }
 
+/* toolbar */
+#toolbar>div {
+    padding: 10px;
+}
+#toolbar-img {
+    width: 80px;
+}
+#toolbar-txt {
+    padding: 10px;
+}
+#toolbar-txt h4 {
+    font-size: 18px
+}
+#toolbar-txt a {
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+#toolbar-txt a:hover{
+    text-decoration: underline;
+}
+#toolbar-icon i{
+    padding: 5px;
+}
+#toolbar-icon i:hover {
+    cursor: pointer;
+    color: var(--color-white);
+}
+#toolbar i {
+    font-size: 1.5em;
+}
+.music-player {
+    width: 200px;
+    height: 5px;
+    margin-top: 10px;
+    border: 3px solid var(--color-secondary);
+    border-radius: 25px;
+}
+#toolbar span {
+    padding: 5px 10px;
+}
+#player-icon i{
+    font-size: 1.8em;
+}
+#player-icon .fa-regular {
+    font-size: 2.5em;
+}
+#right-player i{
+    margin-right: 10px;
+}
 /* flex utility */
 .d-flex {
     display: flex;
@@ -252,6 +301,12 @@ dd {
 .align-center {
     align-items: center;
     align-content: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+.flex-wrap {
+    flex-wrap: wrap;
 }
 /* media query */
 @media screen and (max-width: 992px) {
@@ -309,15 +364,3 @@ dd {
         display: none;
     }
 }
-
-/* ///////////////////////////////////////// */
-/* desktop 1200 */
-
-/* mostrare logo grande */
-
-/* large 992 */
-
-/* medium 768 */
-/* mostrare logo piccolo  */
-
-/* small 576 */
