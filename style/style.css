@@ -100,8 +100,10 @@ h4 {
 }
 .card-img:hover .icon{
     display: block;
+    cursor: pointer;
 }
 .card-img:hover img{
+    cursor: pointer;
     opacity: 0.5;
 }
 #artist-section img{
@@ -203,12 +205,17 @@ dd {
     font-size: 3em;
     padding-right: 5px;
 }
+#playlist ul li:first-child a {
+    display: flex;
+    align-items: center;
+}
+/* bottom sidebar */
+#download {
+    padding: 10px;
+}
 #app {
     display: flex;
     border-bottom: 2px solid var(--color-secondary);
-}
-#download {
-    padding: 10px;
 }
 #app {
     padding-bottom: 10px;
@@ -221,6 +228,9 @@ dd {
     padding-left: 5px;
     color: var(--color-secondary);
     font-weight: 600; 
+}
+#app a:hover {
+    color: var(--color-white);
 }
 #app-bottom {
     padding-top: 10px;
