@@ -353,7 +353,8 @@ dd {
 /* ///////////////////////////// */
 /* non si piazza dove voglio >:( */
 /* //////////////////////////// */
-.progress-bar:hover .progress::after{
+
+/* .progress-bar:hover .progress::after{
     content: "";
     position: absolute;
     width: 12px;
@@ -363,7 +364,9 @@ dd {
     background-color: var(--color-white);
     transform: translate(50%, calc (2px - 50%));
     cursor: pointer;
-}
+} */
+
+/* /////////////////////// */
 /* toolbar volume */
 #right-player {
     min-width: 150px;
@@ -378,8 +381,6 @@ dd {
 .volume-bar {
     width: 100%;
     min-width: 50%;
-    display: flex;
-    align-items: center;
 }
 .volume-bar .progress-bar {
     width: 100%;
