@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style/style.css">
     <title>Spotify</title>
 </head>
@@ -25,8 +25,12 @@
             <div id="sidebar">
                 <!-- flex column space between -->
                 <div>
-                    <img id="s-logo" src="./img/logo.svg" alt="logo">
-                    <img id="small-s-logo" src="./img/logo-small.svg" alt="logo-small">
+                    <!-- logo -->
+                    <div>
+                        <img id="s-logo" src="./img/logo.svg" alt="logo">
+                        <img id="small-s-logo" src="./img/logo-small.svg" alt="logo-small">
+                    </div>
+
                     <!-- main-list -->
                     <div id="main-list">
                         <ul>
@@ -276,7 +280,8 @@
                             <div class="card-title">
                                 <h4>Daily Mix 1</h4>
                             </div>
-                    </div>
+                        </div>
+                    </div>    
                 </section>
                 <!-- Artist section -->
                 <section id="artist-section">
@@ -317,10 +322,10 @@
                          toolbar 
         probabilmente da ricostruire su alcune parti 
 //////////////////////////////////////////////////////////-->
-        <div id="toolbar" class="d-flex space-between">
+        <div id="toolbar" class="d-flex space-between debug">
             <!-- left -->
-            <div class="d-flex align-center">
-                <div id="left-img">
+            <div id="left-player" class="d-flex align-center debug">
+                <div id="left-img" class="debug">
                     <img src="./img/sinister.jpeg" alt="#">
                 </div>
                 <div id="left-txt" >
@@ -330,7 +335,6 @@
                     <a href="#">
                         Brano Nome
                     </a>
-                    
                 </div>
                 <div id="toolbar-icon" class="d-flex">
                     <dd>
@@ -343,7 +347,9 @@
             </div>
                         <!-- mid -->
 <!-- /////////////////////////////////////////////////////// 
-            Spacca il layout al momento ? 
+        something is breaking the layout at the moment ?
+                    *****Solved*****
+            Position absolute broke the layout
 //////////////////////////////////////////////////////////-->
             <div id="media" >
                 <div id="player-icon" class="d-flex space-between align-center">
@@ -362,11 +368,11 @@
                 </div>
             </div>
                         <!-- right -->           
-                <div id="right-player">
+                <div id="right-player" class="debug">
                         <i class="fa-solid fa-list"></i>
                         <i class="fa-solid fa-desktop"></i>
                         <i class="fa-solid fa-volume-high"></i>
-                        <div class="volume-bar">
+                        <div class="volume-bar debug">
                             <div class="progress-bar">
                                 <div class="progress"></div>
                             </div>
@@ -374,6 +380,5 @@
                 </div>
         </div>
     </div>
-
 </body>
 </html>

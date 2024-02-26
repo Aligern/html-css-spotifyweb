@@ -141,7 +141,7 @@ dd {
 
 /* utility */
 .btn-header {
-    margin-right: 20px;
+    margin-right: 25px;
     padding: 10px 20px;
     border: 2px solid var(--color-white);
     border-radius: 25px;
@@ -181,13 +181,12 @@ dd {
     font-weight: 600;
 }
 #s-logo {
-    width: 75%;
-    padding: 15px;
+    width: 70%;
+    padding: 5px;
 }
 #small-s-logo {
-    width: 40px;
+    padding: 5px;
     display: none;
-    margin: 5px;
 }
 #main-list ul li {
     padding: 5px;
@@ -289,27 +288,25 @@ dd {
 #toolbar i:hover {
     cursor: pointer;
 }
-#toolbar span {
-    padding: 5px 10px;
-}
 #media {
     display: flex;
-    width: 100%;
+    width: 75%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 #player-icon {
+    height: 100%;
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 2em;
+    font-size: 1.2em;
 }
 #player-icon i{
-    font-size: 1.8em;
+    justify-content: space-between;
 }
 #player-icon .fa-regular {
     display: inline-block;
-    padding: 0.5em;
 }
 #player-icon .fa-regular:hover {
     transform: scale(1.5);
@@ -345,29 +342,31 @@ dd {
 .progress-bar:hover .progress::after{
     content: "";
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     right: 0;
     border-radius: 50%;
-    background-color: var(--color-secondary);
+    background-color: var(--color-white);
     transform: translate(50%, calc (2px - 50%));
 }
 /* toolbar volume */
 #right-player {
+    width: 25%;
     align-items: center;
-    position: absolute;
-    right: 0.5em;
     display: flex;
     flex-direction: row;
     gap: 1em;
 }
+#right-player i {
+    font-size: 1em;
+}
 .volume-bar {
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 0.7em;
 }
 .volume-bar .progress-bar {
-    width: 6em;
+    width: 100%;
 }
 .volume-bar .progress-bar:hover .progress::after {
     width: 0.8em;
@@ -393,11 +392,10 @@ dd {
 /* media query */
 @media screen and (max-width: 992px) {
     nav ul{
-        display: flex;
         flex-wrap: wrap;
     }
     nav ul li {
-        padding: 10px;
+        padding: 5px;
     }
     .card-container {
         flex-wrap: wrap;
@@ -411,6 +409,9 @@ dd {
     .card {
         width: calc(100% / 2 - 17px);
     }
+    #toolbar-icon {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -420,6 +421,9 @@ dd {
     }
     main {
         flex-grow: 1;
+    }
+    .card {
+        width: calc(100% / 1);
     }
     #sidebar {
         width: 50px;
