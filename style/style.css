@@ -362,6 +362,7 @@ dd {
     border-radius: 50%;
     background-color: var(--color-white);
     transform: translate(50%, calc (2px - 50%));
+    cursor: pointer;
 }
 /* toolbar volume */
 #right-player {
