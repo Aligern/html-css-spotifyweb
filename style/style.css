@@ -259,14 +259,14 @@ dd {
 #toolbar>div {
     padding: 10px;
 }
+#left-player {
+    min-width: 150px;
+}
 #left-img {
-    width: 80px;
+    max-width: 80px;
 }
 #left-txt {
-    padding: 10px;
-}
-#left-txt h4 {
-    font-size: 18px
+    padding: 5px;
 }
 #left-txt a {
     font-weight: 600;
@@ -290,7 +290,7 @@ dd {
 }
 #media {
     display: flex;
-    width: 75%;
+    width: 80%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -299,7 +299,7 @@ dd {
     height: 100%;
     display: flex;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
     font-size: 1.2em;
 }
 #player-icon i{
@@ -351,17 +351,18 @@ dd {
 }
 /* toolbar volume */
 #right-player {
-    width: 25%;
+    min-width: 150px;
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 0.7em;
 }
 #right-player i {
     font-size: 1em;
 }
 .volume-bar {
     width: 100%;
+    min-width: 50%;
     display: flex;
     align-items: center;
 }
@@ -412,6 +413,7 @@ dd {
     #toolbar-icon {
         flex-wrap: wrap;
     }
+    
 }
 
 @media screen and (max-width: 576px) {
@@ -449,4 +451,5 @@ dd {
     #app-bottom h4 {
         display: none;
     }
+    
 }
