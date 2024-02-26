@@ -112,7 +112,7 @@ h4 {
     border-radius: 50%;
 }
 
-/* text utilities*/
+/* nav */
 .header a {
     color: var(--color-white);
 }
@@ -123,6 +123,20 @@ nav a {
     font-weight: 700;
     text-transform: uppercase;
     color: var(--color-secondary);
+}
+/*//////////////////////////////// 
+    border still not centered 
+/////////////////////////////////*/
+nav a:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: transparent;
+}
+nav a:hover::after {
+    background-color: var(--color-green);
 }
 nav a:hover {
     color: var(--color-white);
